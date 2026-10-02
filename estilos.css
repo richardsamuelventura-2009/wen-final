@@ -1,0 +1,315 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family:Arial, sans-serif ;
+    color: #263238;
+    background-color: white;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+/*MENU */
+nav{
+    background-color: #123c4a;
+    padding: 18px 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+.enlaces{
+    display: flex;
+    gap: 25px;
+}
+.enlaces{
+    display: flex;
+    gap: 25px;
+}
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.enlaces a:hover{
+    color:#8de0d0;
+}
+/*====Portada===*/
+.hero{
+    background: linear-gradient(135deg, #123c4a, #1d6875);
+    color: white;
+    padding: 90px 0;
+}
+.hero-contenido{max-width: 750px}
+.etiqueta{
+    color: #159a8c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.hero .etiqueta{
+    color:#a9eee3;
+}
+.hero h1{
+    font-size: 18px;
+    margin: 15px 0;
+}
+.hero p:not(.etiqueta){
+    font-size: 19px;
+    line-height: 1.7;
+}
+/*BOTONES*/
+.boton{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #159a8c;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton:hover{
+    background-color: #11786e;
+}
+.boton-claro{
+    background-color: white;
+    color: #123c4a;
+    margin-top: 15px;
+}
+.boton-claro:hover{
+    background-color: #e5f3f0;
+}
+/*SECCIONES*/
+.seccion{
+    padding: 80px 0;
+}
+.seccion-clara{background-color: #f2f7f6}
+.titulo-seccion{
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+.titulo-seccion h2{
+    font-size: 34px;
+    margin: 12px 0;
+}
+.tutulo-seccion p:not(.etiqueta){
+    color: #607277;
+    line-height: 1.7;
+}
+/*NOSOTROS-GRID*/
+.nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:25px;
+}
+.info-box{
+    padding: 30px;
+    background-color: white;
+    border: 7px solid #dce9e7;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1.2);
+}
+.info-box p{
+    color: #607277;
+    line-height: 1.6;
+}
+/*CARRERAS-GRID*/
+.carreras-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+/*TARJETA*/
+.carrera-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
+}
+/*TAMAÑO DE IMAGENES IGUAL*/
+.carrera-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.carrera-card a{
+    margin-top: auto;
+}
+/*EFECTOS AL PASAR EL MOUSE*/
+.carrera-card:hover{
+    transform: translateY(-7px);
+}
+/*TÍTULO*/
+.carrera-card h3{font-size: 22px}
+/*DESCRIPCIÓN*/
+.carrera-card p {
+    color: #607277;
+    line-height: 1.6;
+    margin-bottom:25px ;
+}
+/*FLEXBOX-BENEFICIOS*/
+.beneficios-flex{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: warp;
+}
+.beneficio{
+    flex:1 1 280px;
+    max-width: 350px;
+    padding: 30px;
+    background-color: #f7fbfa;
+    border-left: 5px solid #159a8c;
+    border-radius: 10px;
+}
+.beneficio strong{
+    color: #159a8c;
+    font-size: 30px;
+}
+.beneficio p{
+    color: #159a8c;
+    line-height: 1.6;
+}
+/*FORMULARIO*/
+.seccion-resgistro{background-color: #eaf5f2}
+.formulario-contenedor{
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+.campo-completo{grid-column: 1/-1;}
+.campo label{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.campo input,
+.campo select{
+    padding: 12px;
+    border: 1px solid#c9d7d5;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #159a8c;
+    border-color: #159a8c;
+}
+.campo input.invalido,
+.campo select.invalido{border: 2px solid #c62828;}
+.campo small{
+    color: #c62828;
+    min-height: 18px;
+    margin-top: 5px;
+}
+/*CHECBOX*/
+.check{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal!important;
+}
+.check input{width: auto;}
+/*BOTÓN DEL FORMULARIO*/
+.borton-form{
+    width: 100%;
+    font-size: 16px;
+}
+/*MENSAJE DE ÉXIRO*/
+.mensaje-exito{
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #dff3e8;
+    color: #176b3a;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+.mensaje-exito.mostrar{display:block;}
+/* CONTACTO */
+.contacto{
+    background-color: #f7fbfa;
+}
+
+.contacto-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.contacto-grid div{
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contacto-grid p{
+    color: #607277;
+}
+/*PIE DE PÁGINA*/
+footer{
+    background-color: #123c4a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+footer p{color: #dce9e7}
+/*RESPONSIVE- CELLUAR*/
+@media(max-width: 768px){
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .enlaces{
+        flex-direction: warp;
+        justify-content: center;
+        gap: 12px;
+    }
+    .enlaces a{font-size: 14px;}
+    .hero {padding: 60px 0;}
+    .hero h1{ font-size:36px ;}
+    .nosotros-grid,
+    .carreras-grid,
+    .form-grid
+    .contacto-grid{
+        grid-template-columns: 1fr;
+    }
+    .campo-completo{grid-column: auto;}
+    .seccion{padding: 55px 0;}
+    .titulo-seccion h2{font-size: 28px;}
+    .formulario-contenedor{padding: 22px;}
+    /*IMAGEN EN EL CELULAR*/
+    .carrera-card img{height: 220px;}
+
+}
